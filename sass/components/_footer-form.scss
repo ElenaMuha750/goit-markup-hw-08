@@ -1,0 +1,47 @@
+.subscribe {
+  margin-left: 93px;
+}
+
+.sub-form {
+  display: flex;
+}
+
+.sub-label {
+  margin-right: 12px;
+}
+
+.sub-email {
+  padding: 15px 16px;
+  width: 358px;
+  height: 50px;
+  left: 815px;
+  top: 2787px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: transparent;
+  outline: none;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &:focus-visible {
+    color: var(--primary-white-color);
+  }
+}
+
+.sub-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-icon {
+  fill: var(--primary-white-color);
+  margin-left: 10px;
+}

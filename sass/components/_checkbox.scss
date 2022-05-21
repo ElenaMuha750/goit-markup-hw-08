@@ -1,0 +1,42 @@
+.check-policy {
+  display: flex;
+  align-items: center;
+  margin-left: 14px;
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+.icon-mod {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 4px;
+  margin-right: 7px;
+  transition: background-color var(--transition-duration) var(--timing-function);
+
+  .check-input:checked + .check-policy & {
+    background-color: var(--accent-color);
+    border: none;
+  }
+}
+
+.check-icon {
+  fill: transparent;
+  transition: fill var(--transition-duration) var(--timing-function);
+
+  .check-input:checked + .check-policy & {
+    fill: var(--primary-white-color);
+  }
+}
+
+.check-condition {
+  color: var(--accent-color);
+}

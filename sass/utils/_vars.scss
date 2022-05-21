@@ -1,0 +1,20 @@
+/* 
+основной цвет заголовков  #212121;
+основной белый цвет, основной цвет фона #FFFFFF;
+основной цвет текста #757575;
+акцент  #2196F3;
+вторичный цвет фона #F5F4FA;
+цвет фона герой, футер  #2F303A
+цвет logo-studio #000000;
+*/
+
+:root {
+  --main-title-color: color #212121;
+  --main-text-color: #757575;
+  --primary-white-color: #ffffff;
+  --secondary-bcg-color: #f5f4fa;
+  --accent-color: #2196f3;
+  --hover-button: #188ce8;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-duration: 250ms;
+}
