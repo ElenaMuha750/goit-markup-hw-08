@@ -143,7 +143,13 @@ body {
 }
 
 .section {
-  padding: 60px 0;
+  padding: 0 auto;
+}
+
+@media screen and (max-width: 1199px) {
+  .section {
+    padding: 60px 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -692,7 +698,7 @@ body {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .features-list__item {
     -ms-flex-preferred-size: calc((100% - 60px) / 2);
         flex-basis: calc((100% - 60px) / 2);
@@ -819,7 +825,6 @@ body {
 }
 
 .staff-list-item {
-  min-width: 270px;
   margin-bottom: 30px;
   background: var(--primary-white-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -920,13 +925,24 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-left: -30px;
+  margin-bottom: -30px;
 }
 
-.clients-item + .clients-item {
+.clients-item {
   margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 479px) {
+  .clients-item {
+    width: calc((100% - 60px) / 2);
+  }
 }
 
 .clients-link {

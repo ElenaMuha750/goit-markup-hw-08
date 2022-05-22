@@ -14,7 +14,6 @@
 }
 
 .staff-list-item {
-  min-width: 270px;
   margin-bottom: 30px;
 
   @media screen and (min-width: 768px) {
@@ -34,9 +33,7 @@
 }
 
 .card-img {
-  // object-fit: cover;
   width: 100%;
-  // box-sizing: border-box;
 }
 
 .staff-title {
