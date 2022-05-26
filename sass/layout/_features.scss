@@ -1,7 +1,7 @@
 .features-list {
   margin-bottom: -30px;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -14,12 +14,12 @@
   text-align: left;
   margin-bottom: 30px;
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @include tablet {
     width: calc((100% - 60px) / 2);
     margin-left: 30px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: calc((100% - 120px) / 4);
     margin-left: 30px;
   }
@@ -47,7 +47,7 @@
   text-align: center;
   color: var(--main-title-color);
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     text-align: left;
   }
 }

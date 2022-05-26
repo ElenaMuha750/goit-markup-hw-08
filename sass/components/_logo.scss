@@ -1,7 +1,8 @@
 .logo {
   font-family: "Raleway", Tahoma, sans-serif;
-  font-size: 26px;
-  line-height: 1.19;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--accent-color);
 
@@ -10,7 +11,21 @@
   &--black {
     color: #000000;
   }
+
   &--white {
     color: var(--primary-white-color);
+  }
+
+  @include desktop {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+
+.header-logo {
+  padding: 16px 0;
+
+  @include tablet {
+    padding: 26px 0;
   }
 }

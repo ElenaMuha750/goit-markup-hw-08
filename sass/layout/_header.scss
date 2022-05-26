@@ -1,16 +1,38 @@
 .header__nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   border-bottom: 1px solid #ececec;
 }
 
-.site-nav {
-  display: flex;
-  align-items: center;
+// .site-nav {
+//   display: flex;
+//   align-items: center;
+// }
+
+.menu-open-btn,
+.menu-close-btn {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.menu-open-btn {
+  margin-left: auto;
+}
+
+.menu-close-btn {
+  display: block;
+  margin-left: auto;
+  margin-top: 10px;
 }
 
 .menu-list {
-  display: flex;
+  // display: flex;
+  display: none;
   margin-left: 93px;
 
   .menu-list__item:not(:last-child) {
@@ -56,7 +78,8 @@
 /* ---------------------Контакты---------------- */
 
 .contact {
-  display: flex;
+  // display: flex;
+  display: none;
   margin-left: auto;
 
   .contact__item:not(:last-child) {
@@ -93,4 +116,78 @@
   .contact__link:focus & {
     fill: var(--accent-color);
   }
+}
+
+/* -------------Мобильное меню----------- */
+
+.mob-menu {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding-left: 25px;
+  pointer-events: inherit;
+  background-color: #ffffff;
+
+  .container {
+    display: block;
+  }
+}
+
+.mob-menu-top {
+}
+.mob-menu-list {
+}
+
+.mob-menu-list__item:not(:last-child),
+.mob-contact__tel {
+  display: block;
+  margin-bottom: 32px;
+}
+
+.mob-menu-list__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  text-align: left;
+  letter-spacing: 0.02em;
+  color: var(--main-title-color);
+}
+
+.mob-connect {
+}
+.mob-contact {
+}
+.mob-contact__item {
+}
+
+.mob-contact__tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.mob-contact__mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+
+.mob-soc__list {
+}
+
+.mob-soc__item {
+}
+.mob-soc__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
 }
