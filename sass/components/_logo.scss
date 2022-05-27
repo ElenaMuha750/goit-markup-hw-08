@@ -1,13 +1,9 @@
 .logo {
   font-family: "Raleway", Tahoma, sans-serif;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--accent-color);
-
   display: inline-block;
-
   &--black {
     color: #000000;
   }
@@ -16,16 +12,28 @@
     color: var(--primary-white-color);
   }
 
-  @include desktop {
+  @media screen and (max-width: 1199px) {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+
+  @media screen and (min-width: 1200px) {
     font-size: 26px;
     line-height: 1.19;
   }
 }
 
 .header-logo {
-  padding: 16px 0;
+  @media screen and (max-width: 767px) {
+    padding: 16px 0;
+  }
 
-  @include tablet {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding: 26px 0;
+    margin-right: 88px;
+  }
+
+  @include desktop {
+    margin-right: 93px;
   }
 }
