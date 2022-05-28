@@ -7,8 +7,7 @@
 
   @include mobile {
     max-width: 450px;
-    // flex-basis: calc(100% - 30px);
-    // width: 450px;
+    flex-basis: calc(100% - 30px);
   }
 
   @include tablet {
@@ -17,7 +16,6 @@
   }
 
   @include desktop {
-    // max-width: 1200px;
-    width: 1200px;
+    max-width: 1200px;
   }
 }

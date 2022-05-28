@@ -5,10 +5,24 @@
   border-bottom: 1px solid #ececec;
 }
 
-// .site-nav {
-//   display: flex;
-//   align-items: center;
-// }
+.contacts {
+  margin-left: auto;
+}
+
+.site-nav,
+.contacts {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @include tablet {
+    display: flex;
+  }
+
+  @include desktop {
+    display: flex;
+  }
+}
 
 .menu-open-btn,
 .menu-close-btn {
@@ -28,6 +42,10 @@
 
 .menu-open-btn {
   margin-left: auto;
+
+  @include tablet {
+    display: none;
+  }
 }
 
 .menu-close-btn {
@@ -37,10 +55,12 @@
 }
 
 .menu-list {
-  // display: flex;
-  display: none;
-  margin-left: 93px;
+  @include tablet {
+    display: flex;
+  }
+}
 
+@include tablet {
   .menu-list__item:not(:last-child) {
     margin-right: 50px;
   }
@@ -83,26 +103,50 @@
 
 /* ---------------------Контакты---------------- */
 
-.contact {
-  // display: flex;
-  display: none;
+.contact__list {
   margin-left: auto;
 
-  .contact__item:not(:last-child) {
-    margin-right: 50px;
+  @include max-tablet {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include desktop {
+    display: flex;
+  }
+}
+
+.contact__item:not(:last-child) {
+  @include max-tablet {
+    margin-bottom: 10px;
+  }
+
+  @include desktop {
+    margin-right: 30px;
   }
 }
 
 .contact__link {
   display: inline-flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-weight: 500;
-  line-height: 1.14;
   letter-spacing: 0.02em;
+
   color: var(--main-text-color);
   transition: color var(--transition-duration) var(--timing-function);
+
+  @include max-tablet {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+
+  @include desktop {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 
   &:hover,
   &:focus {
@@ -121,6 +165,18 @@
   .contact__link:hover &,
   .contact__link:focus & {
     fill: var(--accent-color);
+  }
+}
+
+@include max-tablet {
+  .mail {
+    width: 14px;
+    height: 10px;
+  }
+
+  .tel {
+    width: 10px;
+    height: 14px;
   }
 }
 
@@ -148,11 +204,6 @@
   }
 }
 
-.mob-menu-top {
-}
-.mob-menu-list {
-}
-
 .mob-menu-list__item:not(:last-child),
 .mob-contact__tel {
   display: block;
@@ -174,12 +225,8 @@
   }
 }
 
-.mob-connect {
-}
 .mob-contact {
   margin-bottom: 64px;
-}
-.mob-contact__item {
 }
 
 .mob-contact__tel {
@@ -204,8 +251,6 @@
   margin-bottom: 48px;
 }
 
-.mob-soc__item {
-}
 .mob-soc__link {
   font-weight: 500;
   font-size: 18px;
