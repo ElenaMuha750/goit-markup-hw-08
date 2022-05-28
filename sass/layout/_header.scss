@@ -3,6 +3,14 @@
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #ececec;
+
+  @media (max-width: 1199px) {
+    max-width: 480px;
+  }
+
+  @include max-tablet {
+    max-width: 768px;
+  }
 }
 
 .contacts {

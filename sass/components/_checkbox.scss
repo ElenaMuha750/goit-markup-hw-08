@@ -1,9 +1,6 @@
-.modal-field {
-  display: inline-flex;
-}
-
 .check-policy {
   display: flex;
+  justify-content: center;
   align-items: center;
   margin-bottom: 30px;
 
@@ -20,7 +17,7 @@
 }
 
 .icon-mod {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
 
