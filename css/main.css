@@ -204,6 +204,21 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    margin-left: 93px;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sub-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .sub-label {
   margin-right: 12px;
 }
@@ -222,6 +237,12 @@ body {
   background: transparent;
   outline: none;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .sub-email {
+    width: 358px;
+  }
 }
 
 .sub-email::-webkit-input-placeholder {
@@ -1320,6 +1341,11 @@ body {
 
 .footer-cont {
   text-align: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 @media screen and (min-width: 767px) and (max-width: 1199px) {
@@ -1329,12 +1355,17 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -1352,6 +1383,13 @@ body {
 
 .footer-thumb:last-child {
   width: calc(100%);
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-adr {
+    min-width: 231px;
+    text-align: left;
+  }
 }
 
 .footer-logo {
@@ -1387,6 +1425,13 @@ body {
 
 .footer-contact:hover, .footer-contact:focus {
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-social {
+    margin-left: 70px;
+    text-align: left;
+  }
 }
 
 .footer-soc-title {

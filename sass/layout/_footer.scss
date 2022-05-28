@@ -6,12 +6,17 @@
 
 .footer-cont {
   text-align: center;
+  align-items: baseline;
+  flex-wrap: nowrap;
 
   @include max-tablet {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
     justify-content: space-between;
+  }
+
+  @include desktop {
+    display: flex;
   }
 }
 
@@ -33,10 +38,12 @@
   }
 }
 
-// .container.footer-cont {
-//   display: flex;
-//   align-items: baseline;
-// }
+@include desktop {
+  .footer-adr {
+    min-width: 231px;
+    text-align: left;
+  }
+}
 
 .footer-logo {
   display: inline-block;
@@ -78,9 +85,12 @@
   }
 }
 
-// .footer-social {
-//   margin-left: 70px;
-// }
+@include desktop {
+  .footer-social {
+    margin-left: 70px;
+    text-align: left;
+  }
+}
 
 .footer-soc-title {
   font-size: 14px;

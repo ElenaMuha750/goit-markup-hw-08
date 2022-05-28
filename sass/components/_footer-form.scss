@@ -1,10 +1,15 @@
-// .subscribe {
-//   margin-left: 93px;
-// }
+.subscribe {
+  @include desktop {
+    margin-left: 93px;
+    text-align: left;
+  }
+}
 
-// .sub-form {
-//   display: flex;
-// }
+@include desktop {
+  .sub-form {
+    display: flex;
+  }
+}
 
 .sub-label {
   margin-right: 12px;
@@ -14,7 +19,6 @@
   padding: 15px 16px;
   width: 100%;
   max-width: 450px;
-  // width: 358px;
   height: 50px;
   left: 815px;
   top: 2787px;
@@ -25,6 +29,10 @@
   outline: none;
 
   margin-bottom: 20px;
+
+  @include desktop {
+    width: 358px;
+  }
 
   &::placeholder {
     font-size: 16px;
