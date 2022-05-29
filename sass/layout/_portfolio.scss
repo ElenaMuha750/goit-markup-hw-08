@@ -99,15 +99,8 @@
   color: #ffffff;
   transform: translateY(101%);
   transition: transform var(--transition-duration) var(--timing-function);
-  align-items: center;
-  justify-content: center;
-
-  // @media screen and (max-width: 479px) {
-  //   padding: 77px 24px;
-  // }
-
-  // @media screen and (max-width: 767.98px) {
-  // }
+  // align-items: center;
+  // justify-content: center;
 
   @media screen and (max-width: 321.98px) {
     padding: 20px;
