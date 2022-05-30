@@ -12,7 +12,7 @@
   @include max-tablet {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   @include desktop {
@@ -28,13 +28,9 @@
   }
 
   @include max-tablet {
-    &:not(:last-child) {
-      width: calc(50%);
+    &:last-child {
+      width: calc(100%);
     }
-  }
-
-  &:last-child {
-    width: calc(100%);
   }
 }
 
