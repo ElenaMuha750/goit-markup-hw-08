@@ -5,15 +5,12 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding-left: 20px;
   pointer-events: inherit;
   background-color: #ffffff;
+  padding-left: 15px;
+  padding-bottom: 90px;
 
   transition: opacity 250ms linear, visibility 250ms linear;
-
-  @media screen and (min-width: 352px) {
-    padding-left: 25px;
-  }
 
   .container {
     overflow-y: auto;
@@ -21,6 +18,11 @@
     flex-direction: column;
     height: 100%;
     justify-content: space-between;
+  }
+
+  @media screen and (min-width: 370px) {
+    padding-left: 25px;
+    padding-bottom: 60px;
   }
 }
 
@@ -83,7 +85,6 @@
 .mob-soc__list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 48px;
 }
 
 .mob-soc__link {

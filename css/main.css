@@ -522,17 +522,12 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding-left: 20px;
   pointer-events: inherit;
   background-color: #ffffff;
+  padding-left: 15px;
+  padding-bottom: 90px;
   -webkit-transition: opacity 250ms linear, visibility 250ms linear;
   transition: opacity 250ms linear, visibility 250ms linear;
-}
-
-@media screen and (min-width: 352px) {
-  .mob-menu {
-    padding-left: 25px;
-  }
 }
 
 .mob-menu .container {
@@ -548,6 +543,13 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (min-width: 370px) {
+  .mob-menu {
+    padding-left: 25px;
+    padding-bottom: 60px;
+  }
 }
 
 .mob-menu-list__item:not(:last-child),
@@ -616,7 +618,6 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 48px;
 }
 
 .mob-soc__link {
