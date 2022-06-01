@@ -525,7 +525,6 @@ body {
   pointer-events: inherit;
   background-color: #ffffff;
   padding-left: 15px;
-  padding-bottom: 90px;
   -webkit-transition: opacity 250ms linear, visibility 250ms linear;
   transition: opacity 250ms linear, visibility 250ms linear;
 }
@@ -548,7 +547,6 @@ body {
 @media screen and (min-width: 370px) {
   .mob-menu {
     padding-left: 25px;
-    padding-bottom: 60px;
   }
 }
 
@@ -616,8 +614,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  margin-bottom: 90px;
+}
+
+@media screen and (min-width: 370px) {
+  .mob-soc__list {
+    margin-bottom: 70px;
+  }
 }
 
 .mob-soc__link {

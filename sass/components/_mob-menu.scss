@@ -8,7 +8,6 @@
   pointer-events: inherit;
   background-color: #ffffff;
   padding-left: 15px;
-  padding-bottom: 90px;
 
   transition: opacity 250ms linear, visibility 250ms linear;
 
@@ -22,7 +21,6 @@
 
   @media screen and (min-width: 370px) {
     padding-left: 25px;
-    padding-bottom: 60px;
   }
 }
 
@@ -84,7 +82,11 @@
 
 .mob-soc__list {
   display: flex;
-  flex-wrap: wrap;
+  margin-bottom: 90px;
+
+  @media screen and (min-width: 370px) {
+    margin-bottom: 70px;
+  }
 }
 
 .mob-soc__link {
